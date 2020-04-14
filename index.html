@@ -6,20 +6,86 @@
     <title>NYT Search</title>
     <!-- links go here. -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/5b0f8e7708.js" crossorigin="anonymous"></script>
-
-
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5b0f8e7708.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- NYT HEADER HERE -->
-
-    <!-- FORM HERE -->
-
-    <!-- TOP ARTICLES -->
-
+    <div class="container">
+      <!-- NYT HEADER HERE -->
+      <!-- // -->
+      <div class="jumbotron text-center">
+        <!-- //change font to Arial -->
+        <h1>NYT Search</h1>
+      </div>
+      <!-- FORM HERE -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Search Parameters
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="search-input">Search Term</label>
+                  <input type="text" class="form-control" id="search-input" />
+                </div>
+                <div class="form-group">
+                  <label for="no-of-records"
+                    >Number of Records to Retrieve</label
+                  >
+                  <select class="form-control" id="no-of-records">
+                    <option>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="start-year">Start Year (Optional)</label>
+                  <input type="text" class="form-control" id="start-year" />
+                </div>
+                <div class="form-group">
+                  <label for="end-year">End Year (Optional)</label>
+                  <input type="text" class="form-control" id="end-year" />
+                </div>
+              </form>
+              <button type="submit" class="btn btn-primary">Search</button>
+              <button type="submit" class="btn btn-primary">
+                Clear Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TOP ARTICLES -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Top Articles
+            </div>
+            <div class="card-body">
+              <!-- articles go here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <hr />
+      <footer class="footer">
+        Made with lots of ♥
+      </footer>
+    </div>
     <!-- scripts go here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
+</html>
