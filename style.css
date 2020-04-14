@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+}
